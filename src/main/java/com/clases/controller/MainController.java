@@ -12,6 +12,5 @@ public class MainController {
 	public String index(){
 		String response = "Bienvenidos a la <a href='https://github.com/lecosi/'>exposición  de spring</a> :)";
 		return response;
-	}
-	
+	}	
 }
