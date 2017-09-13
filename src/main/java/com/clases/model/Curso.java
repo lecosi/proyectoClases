@@ -12,6 +12,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import net.minidev.json.annotate.JsonIgnore;
+
 @Entity
 @Table(name="curso")
 public class Curso implements Serializable {
@@ -33,7 +35,7 @@ public class Curso implements Serializable {
 	@ManyToOne(optional=true, fetch=FetchType.EAGER)
 	@JoinColumn(name="id_profesor")
 	private Profesor profesor;
-	
+	@JsonIgnore
 	
 	public Curso() {
 		super();
